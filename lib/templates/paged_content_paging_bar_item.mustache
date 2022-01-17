@@ -29,13 +29,13 @@
 }}
 <li class="page-item {{#active}}active{{/active}} {{#disabled}}disabled{{/disabled}}"
     data-region="page-item"
-<!--    {{$attributes}}{{/attributes}}>-->
+    {{$attributes}}{{/attributes}}>
 
     <a href="{{#url}}{{.}}{{/url}}{{^url}}#{{/url}}"
        class="page-link"
        data-region="page-link" {{$linkattributes}}aria-label="{{#str}}pagea, moodle, {{page}}{{/str}}"{{/linkattributes}}>
         {{$item-content}}
-<!--            {{{page}}}-->
+            {{{page}}}
         {{/item-content}}
     </a>
 </li>
