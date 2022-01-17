@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="customlang">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/admin/tool/customlang/tests/fixtures/customlang.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

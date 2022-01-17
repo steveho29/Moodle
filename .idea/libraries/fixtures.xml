@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="fixtures">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/h5p/tests/fixtures/essay.zip!/" />
+      <root url="jar://$PROJECT_DIR$/h5p/tests/fixtures/h5ptest.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

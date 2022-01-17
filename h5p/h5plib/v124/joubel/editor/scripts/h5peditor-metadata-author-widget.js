@@ -127,13 +127,13 @@ H5PEditor.metadataAuthorWidget = function (semantics, params, $wrapper, parent) 
     const authorList = $('<ul></ul>');
     params.authors.forEach(function (author) {
       // Name and role
-      var listItem = $('<li>', {
-        html: H5PEditor.htmlspecialchars(author.name),
-        append: $('<span>', {
-          'class': 'h5p-metadata-role',
-          html: author.role
-        })
-      });
+      // var listItem = $('<li>', {
+      //   html: H5PEditor.htmlspecialchars(author.name),
+      //   append: $('<span>', {
+      //     'class': 'h5p-metadata-role',
+      //     html: author.role
+      //   })
+      // });
 
       // The delete-button
       $('<button>', {
