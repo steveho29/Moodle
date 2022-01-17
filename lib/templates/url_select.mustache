@@ -40,24 +40,24 @@
 <div class="{{classes}}">
     <form method="post" action="{{action}}" class="form-inline" id="{{formid}}">
         <input type="hidden" name="sesskey" value="{{sesskey}}">
-<!--        {{#label}}-->
-<!--            <label for="{{id}}"{{#labelattributes}} {{name}}="{{value}}"{{/labelattributes}}>-->
-<!--                {{label}}-->
-<!--            </label>-->
-<!--        {{/label}}-->
-<!--        {{#helpicon}}-->
-<!--            {{>core/help_icon}}-->
-<!--        {{/helpicon}}-->
+        {{#label}}
+            <label for="{{id}}"{{#labelattributes}} {{name}}="{{value}}"{{/labelattributes}}>
+                {{label}}
+            </label>
+        {{/label}}
+        {{#helpicon}}
+            {{>core/help_icon}}
+        {{/helpicon}}
         <select {{#attributes}}{{name}}="{{value}}" {{/attributes}} id="{{id}}" class="custom-select {{classes}}" name="jump"
                 {{#title}}title="{{.}}"{{/title}} {{#disabled}}disabled{{/disabled}}>
             {{#options}}
-<!--                {{#isgroup}}-->
-<!--                    <optgroup label="{{name}}">-->
-<!--                        {{#options}}-->
-<!--                            <option value="{{value}}" {{#selected}}selected{{/selected}}>{{{name}}}</option>-->
-<!--                        {{/options}}-->
-<!--                    </optgroup>-->
-<!--                {{/isgroup}}-->
+                {{#isgroup}}
+                    <optgroup label="{{name}}">
+                        {{#options}}
+                            <option value="{{value}}" {{#selected}}selected{{/selected}}>{{{name}}}</option>
+                        {{/options}}
+                    </optgroup>
+                {{/isgroup}}
                 {{^isgroup}}
                     <option value="{{value}}" {{#selected}}selected{{/selected}}>{{{name}}}</option>
                 {{/isgroup}}
