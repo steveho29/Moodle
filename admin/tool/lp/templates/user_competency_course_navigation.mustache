@@ -52,7 +52,16 @@
 </span>
 {{/hasusers}}
 <br>
-
+{{#hascompetencies}}
+<span>
+<label for="competency-nav-{{uniqid}}" class="accesshide">{{#str}}jumptocompetency, tool_lp{{/str}}</label>
+<select id="competency-nav-{{uniqid}}" class="custom-select">
+{{#competencies}}
+<option value="{{id}}" {{#selected}}selected="selected"{{/selected}}>{{{shortname}}} {{idnumber}}</option>
+{{/competencies}}
+</select>
+</span>
+{{/hascompetencies}}
 </form>
 </div>
 {{#js}}

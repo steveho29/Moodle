@@ -48,42 +48,7 @@
     Setting.
 }}
 <div class="form-item row" id="{{id}}">
-    <div class="form-label col-sm-3 text-sm-right">
-        {{#customcontrol}}
-            <p {{#labelfor}}id="{{labelfor}}_label"{{/labelfor}}>
-                {{{title}}}
-                {{#override}}
-                    <div class="alert alert-info">{{override}}</div>
-                {{/override}}
-                {{#warning}}
-                    <div class="alert alert-warning">{{warning}}</div>
-                {{/warning}}
-            </p>
-        {{/customcontrol}}
-        {{^customcontrol}}
-            <label {{#labelfor}}for="{{labelfor}}"{{/labelfor}}>
-                {{{title}}}
-                {{#override}}
-                    <div class="alert alert-info">{{override}}</div>
-                {{/override}}
-                {{#warning}}
-                    <div class="alert alert-warning">{{warning}}</div>
-                {{/warning}}
-            </label>
-        {{/customcontrol}}
-        <span class="form-shortname d-block small text-muted">{{{name}}}</span>
-    </div>
-    <div class="form-setting col-sm-9">
-        {{#error}}
-            <div><span class="error">{{error}}</span></div>
-        {{/error}}
-        {{{element}}}
-        {{#default}}
-            <div class="form-defaultinfo text-muted {{#forceltr}}text-ltr{{/forceltr}}">{{{default}}}</div>
-        {{/default}}
-        <div class="form-description mt-3">{{{description}}}</div>
-        {{#dependenton}}<div class="form-dependenton mb-4 text-muted">{{{.}}}</div>{{/dependenton}}
-    </div>
+
 </div>
 {{#customcontrol}}
     {{#js}}
