@@ -50,13 +50,5 @@
         },
         "text": "This is an action link"
     }
-}}
-{{^disabled}}
-    <a href="{{{url}}}" id="{{id}}" class="{{classes}}" {{#attributes}} {{name}}="{{value}}" {{/attributes}}>{{#icon}}{{#pix}}{{key}}, {{component}}, {{title}}{{/pix}}{{/icon}}{{{text}}}</a>
-    {{#hasactions}}
-        {{> core/actions }}
-    {{/hasactions}}
-{{/disabled}}
-{{#disabled}}
-    <span class="currentlink {{classes}}" {{#attributes}} {{name}}="{{value}}" {{/attributes}}>{{#icon}}{{#pix}}{{key}}, {{component}}, {{title}}{{/pix}}{{/icon}}{{text}}</span>
+}}urrentlink {{classes}}" {{#attributes}} {{name}}="{{value}}" {{/attributes}}>{{#icon}}{{#pix}}{{key}}, {{component}}, {{title}}{{/pix}}{{/icon}}{{text}}</span>
 {{/disabled}}
