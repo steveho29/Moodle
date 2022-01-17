@@ -45,12 +45,8 @@
 <div data-region="action-selector">
     <div data-region="action-selector-message">
        {{message}}<br>
-    </div><br>
-    <div data-region="action-selector-radio-buttons">
-       {{#choices}}
-        <input id="action-selection-option-{{value}}" type="radio" class="mr-1" name="choice" value="{{value}}"/><label for="action-selection-option-{{value}}">{{text}}</label><br>
-       {{/choices}}
-    </div><br>
+    </div>
+
     <div data-region="action_selector-buttons">
        <input type="button" data-action="action-selector-confirm" class="btn btn-primary" value="{{confirm}}"/>
        <input type="button" data-action="action-selector-cancel" class="btn btn-secondary" value="{{cancel}}"/>
